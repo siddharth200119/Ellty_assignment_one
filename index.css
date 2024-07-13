@@ -1,0 +1,91 @@
+.main-div {
+    width: 370px;
+    background-color: white;
+    box-shadow: 0px 8px 15px 0px #1414141F, 0px 0px 4px 0px #1414141A;
+    border: solid #EEEEEE 1px;
+    padding: 10px 0;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+.option {
+    height: 26px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1F2128;
+    font-family: "Montserrat", sans-serif;
+    line-height: 18.2px;
+    padding: 8px 15px 8px 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.divider {
+    padding: 10px 0px;
+    margin: 0px 15px;
+}
+
+.divider div {
+    height: 1px;
+    width: 100%;
+    background-color: #CDCDCD;
+}
+
+.custom-checkbox {
+    width: 23px;
+    height: 23px;
+    appearance: none;
+    border: solid 1.5px #e0e0e0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.custom-checkbox.mousedown {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13"><path fill="none" stroke="%23878787" stroke-width="1" d="M0.68 6.592L6.22879 11.5272C6.24925 11.5454 6.28055 11.5437 6.29899 11.5235L16.32 0.520004"/></svg>');
+    box-shadow: 0px 0px 0px 3px #eaf0fe;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.option:hover .custom-checkbox:not(.mousedown):not(.mouseup) {
+    border: solid 1.5px #BDBDBD;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13"><path fill="none" stroke="%23E5E5E5" stroke-width="1" d="M0.68 6.592L6.22879 11.5272C6.24925 11.5454 6.28055 11.5437 6.29899 11.5235L16.32 0.520004"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.custom-checkbox.mouseup {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13"><path fill="none" stroke="%23FFFFFF" stroke-width="1" d="M0.68 6.592L6.22879 11.5272C6.24925 11.5454 6.28055 11.5437 6.29899 11.5235L16.32 0.520004"/></svg>');
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2469F6;
+}
+
+.custom-checkbox.mouseup:hover {
+    background-color: #5087F8;
+}
+
+.submit-btn {
+    background-color: #FFCE22;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #1F2128;
+    line-height: 18.2px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #FFD84D;
+}
